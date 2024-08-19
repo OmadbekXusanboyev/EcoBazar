@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecobazar</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- logo title -->
+    <link rel="icon" type="image" href="./image/logo-title.svg" />
+    <!-- icon link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <div class="nav_top">
+            <div class="locatsion">
+              <img src="./image/Map Pin.svg" alt="" />
+              <h6>Store Location: Lincoln- 344, Illinois, Chicago, USA</h6>
+            </div>
+            <div class="login_top">
+              <select name="" id="">
+                <option value="">Eng</option>
+                <option value="">Rus</option>
+                <option value="">Uzb</option>
+              </select>
+              <select name="" id="">
+                <option value="">USD</option>
+                <option value="">RUB</option>
+                <option value="">SUM</option>
+              </select>
+              <span class="or">|</span>
+
+              <!-- sign in modal -->
+
+              <div class="modal_sign_in">
+                <div class="modal-sign_box">
+                  <img
+                    class="sign-img-logo"
+                    src="./image/logo-title.svg"
+                    alt=""
+                  />
+                  <span class="exit_sign"><i class="fa-solid fa-x"></i></span>
+                  <h1>Welcome to EcoBazar</h1>
+                  <form action="">
+                    <label for="email">Email</label><br />
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      required
+                      placeholder="Email"
+                    /><br />
+                    <label for="number">Password</label><br />
+                    <input
+                      type="password"
+                      name="number"
+                      id="number"
+                      required
+                      placeholder="Password"
+                    />
+                  </form>
+                  <p class="forgot">Forgot Password</p>
+                  <button class="log_in">Log in</button>
+                  <h3>OR</h3>
+                  <button class="google">
+                    <img src="./image/google.png" alt="" />Continue with Google</button
+                  ><br />
+                  <button class="facebook-img">
+                    <img src="./image/facebook-logo.webp" alt="" />Continue with
+                    Facebook</button
+                  ><br />
+                  <p class="notice">
+                    By continuing, you agree to EcoBazar's
+                    <a href="">Terms of Service</a> and acknowledge you've read
+                    our <a href="">Privacy Policy.</a>
+                    <a href="">Notice at collection.</a>
+                  </p>
+                  <p class="business">
+                    Are you a business?<a href="">Get started here!</a>
+                  </p>
+                </div>
+              </div>
+              <p class="sign-in">Sign In</p>
+              <span>/</span>
+              <p class="ragistratsion" href="">Sign Up</p>
+            </div>
+          </div>
+
+          <!-- sign up modal -->
+
+          <div class="modal_login">
+            <div class="sign-login">
+              <div class="sign">
+                <h1>Log in or sign up in seconds</h1>
+                <p>
+                  Use your email or another service to continue with Ecobazar
+                  (it’s free)!
+                </p>
+                <button class="google">
+                  <img src="./image/google.png" alt="" />Continue with Google</button
+                ><br />
+                <button class="facebook-img">
+                  <img src="./image/facebook-logo.webp" alt="" />Continue with
+                  Facebook</button
+                ><br />
+                <button class="email-img">
+                  <img src="./image/email_mail.webp" alt="" />Continue with
+                  Email</button
+                ><br />
+                <button>Continue another way</button><br />
+                <p>
+                  By continuing, you agree to ecobazar
+                  <a href="">Terms of Use.</a> Read our
+                  <a href="">Privacy Policy.</a>
+                </p>
+              </div>
+              <img class="sign-img" src="./image/ecobazar-img.jpg" alt="" />
+              <span class="exit"><i class="fa-solid fa-x"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <!--  nav -->
+
+         <div class="nav">
+          <div class="container">
+            <div class="logo">
+              <img src="./image/logo-title.svg" alt="" />
+              <h1>Ecobazar</h1>
+            </div>
+            <div class="search">
+              <div class="search_qidiruv">
+                <img src="./image/Search.svg" alt="" />
+                <input type="search" placeholder="Search" />
+              </div>
+              <button class="search_btn">Search</button>
+            </div>
+            <div class="shop">
+              <img src="./image/Heart.svg" alt="" />
+              <div class="shop_or"></div>
+              <img src="./image/cart.svg" alt="" />
+              <span class="cart-number">0</span>
+              <div class="shop_title">
+                <p>Shopping cart:</p>
+                <h6>$57.00</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- nav_bottom -->
+
+         <div class="nav_bottom">
+          <div class="container">
+            <ul class="links">
+              <select name="" id="home">
+                <option value="">Home</option>
+                <option value="">Bilmadim</option>
+              </select>
+              <select name="" id="">
+                <option value="">Shop</option>
+                <option value="">Bilmadim</option>
+              </select>
+              <select name="" id="">
+                <option value="">Pages</option>
+                <option value="">Bilmadim</option>
+              </select>
+              <select name="" id="">
+                <option value="">Blog</option>
+                <option value="">Bilmadim</option>
+              </select>
+              <a href="">About Us</a>
+              <a href="">Contact Us</a>
+            </ul>
+            <div class="phone">
+              <img src="./image/PhoneCall.svg" alt="" />
+              <h3>(93) 443-47-42</h3>
+            </div>
+
+            <div class="mobile_link">
+              <ul class="link">
+                <select name="" id="home">
+                  <option value="">Home</option>
+                  <option value="">Bilmadim</option>
+                </select>
+                <select name="" id="">
+                  <option value="">Shop</option>
+                  <option value="">Bilmadim</option>
+                </select>
+                <select name="" id="">
+                  <option value="">Pages</option>
+                  <option value="">Bilmadim</option>
+                </select>
+                <select name="" id="">
+                  <option value="">Blog</option>
+                  <option value="">Bilmadim</option>
+                </select>
+              </ul>
+              <a href="">About Us</a>
+              <a href="">Contact Us</a>
+            </div>
+
+
+            <div class="menu">
+              <span class="line_one"></span>
+              <span class="line_two"></span>
+              <span class="line_three"></span>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- hero -->
+      
+      <div class="hero">
+        <div class="container">
+          <img class="hero_img" src="./image/Bannar.png" alt="" />
+          <img class="mobile_bg" src="./image/herobgimg.svg" alt="">
+          <div class="hero_title">
+            <h5>Best Deals</h5>
+            <h1>Sale of the Month</h1>
+            <span class="aksiya">
+              <h3>56%</h3>
+              <h6>OFF</h6>
+            </span>
+            <div class="data">
+              <div class="days">
+                <div>00</div>
+                <h5>DAYS</h5>
+              </div>
+              <div>:</div>
+              <div class="days">
+                <div>02</div>
+                <h5>HOURS</h5>
+              </div>
+              <div>:</div>
+              <div class="days">
+                <div>18</div>
+                <h5>MINS</h5>
+              </div>
+              <div>:</div>
+              <div class="days">
+                <div>46</div>
+                <h5>SECS</h5>
+              </div>
+            </div>
+            <button class="hero_btn">
+              ShopNow <img src="./image/arrow.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div> 
+    </header>
+    <main>
+       <section>
+        <div class="card-modal">
+          <div class="card_products">
+            
+          </div>
+        </div>
+        <div class="container">
+          <div class="cards">
+            
+        </div>
+        <div class="carusel_number">
+          <img src="./image/Chevron Down.svg" alt="" />
+          <span class="heading1">1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>...</span>
+          <span>21</span>
+          <img src="./image/Chevron Down (1).svg" alt="" />
+        </div>
+        </div>
+      </section> 
+    </main>
+    <!-- footer -->
+     <footer>
+      <section>
+        <div class="footer_top">
+          <div class="container">
+            <div>
+              <h3 class="footer_top_title">Subcribe our Newsletter</h3>
+              <p class="footer_top_text">
+                Pellentesque eu nibh eget mauris congue mattis mattis nec
+                tellus. Phasellus imperdiet elit eu magna.
+              </p>
+            </div>
+            <div class="socials">
+              <div class="email">
+                <div class="email_qidiruv">
+                  <input class="email_input" type="email" placeholder="Your email address" />
+                </div>
+                <button class="search_btn">Subscribe</button>
+              </div>
+              <div class="social">
+                <a
+                  target="_blank"
+                  class="facebook"
+                  href="https://www.facebook.com/profile.php?id=100095231617106"
+                  ><img src="./image/Facebook.svg" alt=""
+                /></a>
+                <a
+                  target="_blank"
+                  href="https://twitter.com/xusaboyev83869?t=K0JxhBXJsAjJ7Yy1t5_anw&s=09"
+                  ><img src="./image/twitter.svg" alt=""
+                /></a>
+                <a target="_blank" href="https://github.com/OmadbekXusanboyev"
+                  ><img src="./image/pinterest.svg" alt=""
+                /></a>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/omad_coder_07?igsh=MXAxM2R6Y2hpNG54YQ=="
+                  ><img src="./image/instagram.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+      <div class="container">
+          <div class="footer_boxs">
+            <div class="footer_box">
+              <h3>About Shopery</h3>
+              <p>
+                Morbi cursus porttitor enim lobortis molestie. Duis gravida
+                turpis dui, eget bibendum magna congue nec.
+              </p>
+              <div class="aloqa">
+                <input
+                  type="phone"
+                  name="number"
+                  placeholder="+998 (__) __-__-__"
+                />
+                <div>or</div>
+                <input
+                  type="email"
+                  name="email"
+                  id=""
+                  placeholder="_ _ _@gmail.com"
+                />
+              </div>
+            </div>
+            <div class="info">
+              <div class="myaccaunt">
+                <h3>My Account</h3>
+                <a href="">My Account</a>
+                <a href="">Order History</a>
+                <a href="">Shoping Cart</a>
+                <a href="">Wishlist</a>
+                <a href="">Settings</a>
+              </div>
+              <div class="help">
+                <h3>Help</h3>
+                <a href="">Contact</a>
+                <a href="">Faqs</a>
+                <a href="">Terms & Condition</a>
+                <a href="">Privacy Policy</a>
+              </div>
+              <div class="proxy">
+                <h3>Proxy</h3>
+                <a href="">About</a>
+                <a href="">Shop</a>
+                <a href="">Product</a>
+                <a href="">Products Details</a>
+                <a href="">Track Order</a>
+              </div>
+              <div class="categories">
+                <h3>Categories</h3>
+                <a href="">Fruit & Vegetables</a>
+                <a href="">Meat & Fish</a>
+                <a href="">Bread & Bakery</a>
+                <a href="">Beauty & Health </a>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="social_networks">
+            <div class="social">
+              <a
+                target="_blank"
+                class="facebook"
+                href="https://www.facebook.com/profile.php?id=100074413364976&mibextid=ZbWKwL"
+              >
+                <img src="./image/Facebook.svg" alt=""
+              /></a>
+
+              <a
+                target="_blank"
+                class="twitter"
+                href="https://twitter.com/xusaboyev83869?t=K0JxhBXJsAjJ7Yy1t5_anw&s=09"
+              >
+                <img src="./image/twitter.svg" alt=""
+              /></a>
+
+              <a target="_blank" class="pinterest" href="#">
+                <img src="./image/pinterest.svg" alt=""
+              /></a>
+
+              <a
+                target="_blank"
+                class="instagram"
+                href="https://instagram.com/omad_coder_07?igshid=MzNlNGNkZWQ4Mg==    "
+              >
+                <img src="./image/instagram.svg" alt=""
+              /></a>
+            </div>
+            <div class="network_info">
+              <p>
+                Ecobazar <span>OmadCoder.</span> © 2021. All Rights Reserved
+              </p>
+            </div>
+            <div class="pay">
+              <img src="./image/Method=ApplePay.png" alt="" />
+              <img src="./image/Visa.png" alt="" />
+              <img src="./image/Method=Discover.png" alt="" />
+              <img src="./image/Method=Mastercard.png" alt="" />
+              <img src="./image/payment.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section> 
+    </footer> 
+  </body>
+  <script src="./JS/main.js"></script>
+</html>
