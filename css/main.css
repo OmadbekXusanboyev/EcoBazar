@@ -1535,7 +1535,7 @@ footer {
   .card_products {
     padding: 0px 0px 150px 20px;
     width: 95%;
-    min-height: 570px;
+    min-height: 600px;
     flex-direction: column;
   }
   .products-img img {
