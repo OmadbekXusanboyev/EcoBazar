@@ -10,6 +10,13 @@ const menu = document.querySelector(".menu");
 const mobile_link = document.querySelector(".mobile_link");
 
 
+document.addEventListener("click", (e) => {
+  if (e.target.classList.contains("img1")) {
+    document.querySelector(".katta-img").setAttribute("src", e.target.getAttribute("src"));
+  }
+})
+
+
 menu.addEventListener("click", () => {
      mobile_link.classList.toggle("active");
      menu.classList.toggle("active");
@@ -45,12 +52,12 @@ const products = [
   {
     id: 0,
     img: "./image/card1.png",
-    imgs: {
-      img1: "./image/img1.png",
-      img2: "./image/img2.png",
-      img3: "./image/img3.png",
-      img4: "./image/img4.png",
-    },
+    imgs: [
+      "https://static.wixstatic.com/media/fdc9dd_838ab398091c4ab19aacbfc8684ea628~mv2.jpg/v1/fill/w_576,h_769,al_c,q_85,enc_auto/fdc9dd_838ab398091c4ab19aacbfc8684ea628~mv2.jpg",
+      "https://rukminim2.flixcart.com/image/850/1000/xif0q/plant-seed/a/z/c/150-pak-choi-salad-vegetable-seed-co536pk-150seeds-atlus-original-imagkzsyyfnfyqgu.jpeg?q=20&crop=false",
+      "https://rukminim2.flixcart.com/image/850/1000/xif0q/plant-seed/1/i/5/30-pakchoi-vegetable-seeds-for-home-garden-30-seeds-arshiayat-original-imagvhqnt5hfbqtc.jpeg?q=90&crop=false",
+      "https://rukminim2.flixcart.com/image/750/900/kz7bcsw0/plant-seed/k/t/v/40-gi-seeds-pakchoi-vegetable-gromax-india-original-imagb9j4xtffhv2y.jpeg?q=20&crop=false",
+    ],
     name: "Green Zaden",
     price: 14.99,
     priseDel: 12,
@@ -59,6 +66,12 @@ const products = [
   {
     id: 1,
     img: "./image/card2.png",
+    imgs: [
+      "../image/card2.png",
+      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
+      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
+      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+    ],
     name: "Potatoes",
     price: 16.44,
     priseDel: 12.99,
@@ -67,6 +80,12 @@ const products = [
   {
     id: 2,
     img: "./image/card3.png",
+    imgs: [
+      "../image/card2.png",
+      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
+      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
+      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+    ],
     name: "Red Chili",
     price: 18.33,
     priseDel: 16.99,
@@ -75,6 +94,12 @@ const products = [
   {
     id: 3,
     img: "./image/card4.png",
+    imgs: [
+      "../image/card2.png",
+      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
+      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
+      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+    ],
     name: "Mecca",
     price: 12.33,
     priseDel: 12,
@@ -83,6 +108,12 @@ const products = [
   {
     id: 4,
     img: "./image/card5.png",
+    imgs: [
+      "../image/card2.png",
+      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
+      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
+      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+    ],
     name: "Tomato",
     price: 21.9,
     priseDel: 19,
@@ -91,6 +122,12 @@ const products = [
   {
     id: 5,
     img: "./image/card6.png",
+    imgs: [
+      "../image/card2.png",
+      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
+      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
+      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+    ],
     name: "Eggplant",
     price: 13.9,
     priseDel: 11,
@@ -99,6 +136,12 @@ const products = [
   {
     id: 6,
     img: "./image/card7.png",
+    imgs: [
+      "../image/card2.png",
+      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
+      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
+      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+    ],
     name: "Cauliflower",
     price: 10.99,
     priseDel: 7.98,
@@ -107,6 +150,12 @@ const products = [
   {
     id: 7,
     img: "./image/card8.png",
+    imgs: [
+      "../image/card2.png",
+      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
+      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
+      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+    ],
     name: "Green Apple",
     price: 17.9,
     priseDel: 16,
@@ -115,6 +164,12 @@ const products = [
   {
     id: 8,
     img: "./image/card9.png",
+    imgs: [
+      "../image/card2.png",
+      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
+      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
+      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+    ],
     name: "Mango",
     price: 18.1,
     priseDel: 16.33,
@@ -123,6 +178,12 @@ const products = [
   {
     id: 9,
     img: "./image/card10.png",
+    imgs: [
+      "../image/card2.png",
+      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
+      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
+      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+    ],
     name: "Green Chili",
     price: 11.99,
     priseDel: 9.99,
@@ -131,6 +192,12 @@ const products = [
   {
     id: 10,
     img: "./image/card11.png",
+    imgs: [
+      "../image/card2.png",
+      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
+      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
+      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+    ],
     name: "Chili",
     price: 24.99,
     priseDel: 18,
@@ -139,6 +206,12 @@ const products = [
   {
     id: 11,
     img: "./image/card12.png",
+    imgs: [
+      "../image/card2.png",
+      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
+      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
+      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+    ],
     name: "Cucumber",
     price: 13.99,
     priseDel: 12.3,
@@ -147,6 +220,12 @@ const products = [
   {
     id: 12,
     img: "./image/card13.png",
+    imgs: [
+      "../image/card2.png",
+      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
+      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
+      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+    ],
     name: "Mecca",
     price: 16.99,
     priseDel: 15,
@@ -155,6 +234,12 @@ const products = [
   {
     id: 13,
     img: "./image/card14.png",
+    imgs: [
+      "../image/card2.png",
+      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
+      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
+      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+    ],
     name: "Lettuce",
     price: 14.99,
     priseDel: 13.9,
@@ -163,6 +248,12 @@ const products = [
   {
     id: 14,
     img: "./image/card15.png",
+    imgs: [
+      "../image/card2.png",
+      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
+      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
+      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+    ],
     name: "Chili",
     price: 12.99,
     priseDel: 10.99,
@@ -171,6 +262,12 @@ const products = [
   {
     id: 15,
     img: "./image/card16.png",
+    imgs: [
+      "../image/card2.png",
+      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
+      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
+      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+    ],
     name: "Red Chili",
     price: 14.99,
     priseDel: 12.99,
@@ -208,8 +305,10 @@ const showModal = (id) => {
   card_products.innerHTML = `
      <div class="products">
        <div class="products-img">
-        
-
+           <img class="img1" src="${products[id].imgs[0]}" alt="" />
+           <img class="img1" src="${products[id].imgs[1]}" alt="" />
+           <img class="img1" src="${products[id].imgs[2]}" alt="" />
+           <img class="img1" src="${products[id].imgs[3]}" alt="" />
        </div>
        <div class="katta-rasm">
          <img class="katta-img" src="${products[id].img}" alt=""
@@ -301,8 +400,13 @@ const showModal = (id) => {
      </div>
    </div>
 `;
-  card_modal.classList.add("active");
+
+card_modal.classList.add("active");
 };
+
+
+
+
 const exitModal = () => {
   card_modal.classList.remove("active");
 };
