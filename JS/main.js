@@ -91,7 +91,7 @@ const products = [
     name: "Red Chili",
     price: 18.33,
     priseDel: 16.99,
-    desc: "The chili pepper (also chile pepper or chilli pepper, from Nahuatl is the fruit of plants from the genus Capsicum, members of the nightshade family, Solanaceae. In Britain, Australia, New Zealand, South Africa, India, Malaysia and other Asian countries, the word pepper is usually omitted.",
+    desc: "The chili pepper (also chile pepper or chilli pepper, from Nahuatl is the fruit of plants from the genus Capsicum, members of the nightshade family, Solanaceae.",
   },
   {
     id: 3,
@@ -105,7 +105,7 @@ const products = [
     name: "Mecca",
     price: 12.33,
     priseDel: 12,
-    desc: "Corn, Zea mays, belongs to the Poaceae family, and while eaten sometimes as avegetable and sometimes as a grain, it is actually classified by botanists as afruit, as are tomatoes, green peppers, cucumbers, zucchini and other squashes.Sweet corn is a variant in which the sugar in the fruit kernels turns from sugarto starch less slowly after harvest.",
+    desc: "Corn, Zea mays, belongs to the Poaceae family, and while eaten sometimes as avegetable and sometimes as a grain, it is actually classified by botanists as afruit, as are tomatoes, green peppers, cucumbers, zucchini and other squashes.",
   },
   {
     id: 4,
@@ -133,7 +133,7 @@ const products = [
     name: "Eggplant",
     price: 13.9,
     priseDel: 11,
-    desc: "The eggplant is a delicate, tropical perennial plant often cultivated as a tender or half-hardy annual in temperate climates. The stem is often spiny. The flowers are white to purple in color, with a five-lobed corolla and yellow stamens.Some common cultivars have fruit that is egg-shaped, glossy, and purple with white flesh and a spongy, meaty texture. ",
+    desc: "The eggplant is a delicate, tropical perennial plant often cultivated as a tender or half-hardy annual in temperate climates. The stem is often spiny. The flowers are white to purple in color, with a five-lobed corolla and yellow stamens.",
   },
   {
     id: 6,
@@ -161,7 +161,7 @@ const products = [
     name: "Green Apple",
     price: 17.9,
     priseDel: 16,
-    desc: "The Granny Smith, also known as a green apple or sour apple, is an apple cultivar that originated in Australia in 1868. It is named after Maria Ann Smith, who propagated the cultivar from a chance seedling. The tree is thought to be a hybrid of Malus sylvestris, the European wild apple, with the domesticated apple Malus domestica as the polleniser.",
+    desc: "The Granny Smith, also known as a green apple or sour apple, is an apple cultivar that originated in Australia in 1868. It is named after Maria Ann Smith, who propagated the cultivar from a chance seedling.",
   },
   {
     id: 8,
@@ -175,7 +175,7 @@ const products = [
     name: "Mango",
     price: 18.1,
     priseDel: 16.33,
-    desc: "A mango is an edible stone fruit produced by the tropical tree Mangifera indica. It originated from the region between northwestern Myanmar, Bangladesh, and northeastern India. M. indica has been cultivated in South and Southeast Asia since ancient times resulting in two types of modern mango cultivars: the Indian type and the Southeast Asian type.",
+    desc: "A mango is an edible stone fruit produced by the tropical tree Mangifera indica. It originated from the region between northwestern Myanmar, Bangladesh, and northeastern India.",
   },
   {
     id: 9,
@@ -189,7 +189,7 @@ const products = [
     name: "Green Chili",
     price: 11.99,
     priseDel: 9.99,
-    desc: "Chili peppers, also spelled chile or chilli (from Classical Nahuatl chīlli), are varieties of the berry-fruit of plants from the genus Capsicum, which are members of the nightshade family Solanaceae, cultivated for their pungency. Chili peppers are widely used in many cuisines as a spice to add heat to dishes.",
+    desc: "Chili peppers, also spelled chile or chilli (from Classical Nahuatl chīlli), are varieties of the berry-fruit of plants from the genus Capsicum, which are members of the nightshade family Solanaceae, cultivated for their pungency.",
   },
   {
     id: 10,
@@ -203,7 +203,7 @@ const products = [
     name: "Chili",
     price: 24.99,
     priseDel: 18,
-    desc: "Chili peppers are believed to have originated in Central or South America and were first cultivated in Mexico. European explorers brought chili peppers back to the Old World in the late 16th century as part of the Columbian Exchange, which led to many cultivars spreading around the world and finding use in both food and traditional medicine.",
+    desc: "Chili peppers are believed to have originated in Central or South America and were first cultivated in Mexico. European explorers brought chili peppers back to the Old World in the late 16th century as part of the Columbian Exchange.",
   },
   {
     id: 11,
@@ -217,7 +217,7 @@ const products = [
     name: "Cucumber",
     price: 13.99,
     priseDel: 12.3,
-    desc: "The cucumber (Cucumis sativus) is a widely-cultivated creeping vine plant in the family Cucurbitaceae that bears cylindrical to spherical fruits, which are used as culinary vegetables. Considered an annual plant, there are three main types of cucumber—slicing, pickling, and seedless—within which several cultivars have been created.",
+    desc: "The cucumber (Cucumis sativus) is a widely-cultivated creeping vine plant in the family Cucurbitaceae that bears cylindrical to spherical fruits, which are used as culinary vegetables. Considered an annual plant.",
   },
   {
     id: 12,
@@ -231,7 +231,7 @@ const products = [
     name: "Mecca",
     price: 16.99,
     priseDel: 15,
-    desc: "Corn, Zea mays, belongs to the Poaceae family, and while eaten sometimes as avegetable and sometimes as a grain, it is actually classified by botanists as afruit, as are tomatoes, green peppers, cucumbers, zucchini and other squashes.Sweet corn is a variant in which the sugar in the fruit kernels turns from sugarto starch less slowly after harvest.",
+    desc: "Corn, Zea mays, belongs to the Poaceae family, and while eaten sometimes as avegetable and sometimes as a grain, it is actually classified by botanists as afruit, as are tomatoes, green peppers, cucumbers, zucchini and other squashes.",
   },
   {
     id: 13,
@@ -259,7 +259,7 @@ const products = [
     name: "Chili",
     price: 12.99,
     priseDel: 10.99,
-    desc: "Chili peppers are believed to have originated in Central or South America and were first cultivated in Mexico. European explorers brought chili peppers back to the Old World in the late 16th century as part of the Columbian Exchange, which led to many cultivars spreading around the world and finding use in both food and traditional medicine.",
+    desc: "Chili peppers are believed to have originated in Central or South America and were first cultivated in Mexico. European explorers brought chili peppers back to the Old World in the late 16th century as part of the Columbian Exchange.",
   },
   {
     id: 15,
