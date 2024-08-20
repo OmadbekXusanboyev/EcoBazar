@@ -1522,6 +1522,7 @@ footer {
     display: none;
     left: 250px;
   }
+
   /* card modal */
 
   .card-modal {
@@ -1534,7 +1535,7 @@ footer {
   .card_products {
     padding: 0px 0px 150px 20px;
     width: 95%;
-    min-height: 67%;
+    min-height: 570px;
     flex-direction: column;
   }
   .products-img img {
@@ -1588,7 +1589,7 @@ footer {
   }
   .products-img{
     position: absolute;
-    left: 0;
+    left: 7px;
     top: 0;
     flex-direction: inherit;
     padding: 0;
