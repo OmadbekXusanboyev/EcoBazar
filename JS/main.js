@@ -245,7 +245,7 @@ const products = [
     name: "Lettuce",
     price: 14.99,
     priseDel: 13.9,
-    desc: "Lettuce (Lactuca sativa) is an annual plant of the family Asteraceae. It is most often grown as a leaf vegetable, but sometimes for its stem and seeds. Lettuce is most often used for salads, although it is also seen in other kinds of food, such as soups, sandwiches and wraps; it can also be grilled. One variety, celtuce (asparagus lettuce), is grown for its stems, which are eaten either raw or cooked.",
+    desc: "Lettuce (Lactuca sativa) is an annual plant of the family Asteraceae. It is most often grown as a leaf vegetable, but sometimes for its stem and seeds. Lettuce is most often used for salads.",
   },
   {
     id: 14,
@@ -273,7 +273,7 @@ const products = [
     name: "Red Chili",
     price: 14.99,
     priseDel: 12.99,
-    desc: "Chili peppers, also spelled chile or chilli (from Classical Nahuatl chīlli), are varieties of the berry-fruit of plants from the genus Capsicum, which are members of the nightshade family Solanaceae, cultivated for their pungency. Chili peppers are widely used in many cuisines as a spice to add heat to dishes.",
+    desc: "Chili peppers, also spelled chile or chilli (from Classical Nahuatl chīlli), are varieties of the berry-fruit of plants from the genus Capsicum, which are members of the nightshade family Solanaceae, cultivated for their pungency.",
   },
 ];
 
