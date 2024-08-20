@@ -1533,12 +1533,15 @@ footer {
   }
 
   .card_products {
-    width: 90%;
-    height: 85%;
+    width: 95%;
+    height: 87%;
     flex-direction: column;
   }
+  .products-img img {
+    width: 80px;
+}
   .katta-rasm img {
-    width: 250px;
+    width: 230px;
     height: 200px;
   }
 
