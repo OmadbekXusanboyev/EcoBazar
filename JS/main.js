@@ -9,6 +9,8 @@ const exit = document.querySelector(".exit");
 const menu = document.querySelector(".menu");
 const mobile_link = document.querySelector(".mobile_link");
 
+let a = 0;
+
 
 document.addEventListener("click", (e) => {
   if (e.target.classList.contains("img1")) {
@@ -81,10 +83,10 @@ const products = [
     id: 2,
     img: "./image/card3.png",
     imgs: [
-      "../image/card2.png",
-      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
-      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
-      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+      "../image/card3.png",
+      "https://5.imimg.com/data5/SELLER/Default/2022/3/GP/HA/KE/139023626/red-chili.jpg",
+      "https://www.sunsetgrown.com/wp-content/uploads/2020/09/9CStg0l2-.png",
+      "https://img.freepik.com/premium-vector/red-hot-chili-pepper-realistic-image_98292-2560.jpg",
     ],
     name: "Red Chili",
     price: 18.33,
@@ -95,10 +97,10 @@ const products = [
     id: 3,
     img: "./image/card4.png",
     imgs: [
-      "../image/card2.png",
-      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
-      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
-      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+      "../image/card4.png",
+      "https://rukminim2.flixcart.com/image/850/1000/xif0q/plant-seed/o/m/g/50-gcd-swcr-n-397-cezius-original-imagzvztat2vfxuc.jpeg?q=20&crop=false",
+      "https://3.imimg.com/data3/ST/GO/MY-4952601/yellow-maize-500x500.jpg",
+      "https://img2.exportersindia.com/product_images/bc-full/2023/4/11778784/fresh-yellow-maize-1681282067-6845686.jpeg",
     ],
     name: "Mecca",
     price: 12.33,
@@ -109,10 +111,10 @@ const products = [
     id: 4,
     img: "./image/card5.png",
     imgs: [
-      "../image/card2.png",
-      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
-      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
-      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+      "../image/card5.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tomato_je.jpg/1200px-Tomato_je.jpg",
+      "https://study.com/cimages/multimages/16/adobestock_34617669.jpeg",
+      "https://belfastmedia.com/uploads/article/2023/12/20626/Tomatoes.jpg?t=1702116356",
     ],
     name: "Tomato",
     price: 21.9,
@@ -123,10 +125,10 @@ const products = [
     id: 5,
     img: "./image/card6.png",
     imgs: [
-      "../image/card2.png",
-      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
-      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
-      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+      "../image/card6.png",
+      "https://vitamedica.com/cdn/shop/articles/Eggplant.jpg?v=1697657406",
+      "https://static.libertyprim.com/files/varietes/aubergine-americaine-large.jpg?1569516527",
+      "https://www.vegaproduce.com/wp-content/uploads/2018/09/Chinese-Eggplant-1.jpg",
     ],
     name: "Eggplant",
     price: 13.9,
@@ -137,10 +139,10 @@ const products = [
     id: 6,
     img: "./image/card7.png",
     imgs: [
-      "../image/card2.png",
-      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
-      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
-      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+      "../image/card7.png",
+      "https://qph.cf2.quoracdn.net/main-qimg-b7dfca01a7189ec36ef57f612c7ea1a5-lq",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVAwaX4h8uDF4su4nKB7lw7A1-m6b-U6QKOJjvAm7zwqIn9XAtJQjkdYoDWtZVqR-yVSk&usqp=CAU",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCJQd-9KNVjmOU2l7qw8h3ErEIHnjSysu_zaxzznlRe4eCVDTJMvMh7VzGAMrNTIwvqUQ&usqp=CAU",
     ],
     name: "Cauliflower",
     price: 10.99,
@@ -151,10 +153,10 @@ const products = [
     id: 7,
     img: "./image/card8.png",
     imgs: [
-      "../image/card2.png",
-      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
-      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
-      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+      "../image/card8.png",
+      "https://organicandreal.com/cdn/shop/products/or100000101_1.jpg?v=1616379925",
+      "https://www.komalasvegemart.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/0/0/0020896_fresh-green-apples_600.jpeg",
+      "https://chefsmandala.com/wp-content/uploads/2018/03/Apple-Green.jpg",
     ],
     name: "Green Apple",
     price: 17.9,
@@ -165,10 +167,10 @@ const products = [
     id: 8,
     img: "./image/card9.png",
     imgs: [
-      "../image/card2.png",
-      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
-      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
-      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+      "../image/card9.png",
+      "https://btrade-egypt.com/wp-content/uploads/2018/04/Mangoes-for-skin.jpg",
+      "https://5.imimg.com/data5/JO/CN/MY-29200598/green-raw-mango-500x500.jpg",
+      "https://qph.cf2.quoracdn.net/main-qimg-5f8601d7bbb41166349e9fd6928fbb24-lq",
     ],
     name: "Mango",
     price: 18.1,
@@ -179,10 +181,10 @@ const products = [
     id: 9,
     img: "./image/card10.png",
     imgs: [
-      "../image/card2.png",
-      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
-      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
-      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+      "../image/card10.png",
+      "https://yaneastore.com/image/cache/catalog/RnFLy51IqD7vkv9eO8H9OPpoiFJOTmCcyAysoxhp-500x500.jpeg",
+      "https://cdn.salla.sa/dbPPv/oWbXAWHFUTH0XipKMt8OOxCgNPYJZeSLgTV2Q43J.png",
+      "https://cdn.salla.sa/QRBdr/5sbwpukRBnXlKRJ8F9NqT02LwING8K0QyhpEHvNR.png",
     ],
     name: "Green Chili",
     price: 11.99,
@@ -193,10 +195,10 @@ const products = [
     id: 10,
     img: "./image/card11.png",
     imgs: [
-      "../image/card2.png",
-      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
-      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
-      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+      "../image/card11.png",
+      "https://www.veggycation.com.au/siteassets/veggycationvegetable/chillies-green.jpg",
+      "https://5.imimg.com/data5/SELLER/Default/2022/12/ZO/XH/LV/138921753/green-organic-chilli-500x500.jpg",
+      "https://moaahar.com/wp-content/uploads/2021/03/Green20Chilli-3.jpg",
     ],
     name: "Chili",
     price: 24.99,
@@ -207,10 +209,10 @@ const products = [
     id: 11,
     img: "./image/card12.png",
     imgs: [
-      "../image/card2.png",
-      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
-      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
-      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+      "../image/card12.png",
+      "https://static.libertyprim.com/files/familles/concombre-large.jpg?1569271746",
+      "https://www.oifood.in/files/products/1749a4cf519e7392b31301adcd7938bd.jpg",
+      "https://chefsmandala.com/wp-content/uploads/2018/03/Cucumber.jpg",
     ],
     name: "Cucumber",
     price: 13.99,
@@ -221,10 +223,10 @@ const products = [
     id: 12,
     img: "./image/card13.png",
     imgs: [
-      "../image/card2.png",
-      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
-      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
-      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+      "../image/card13.png",
+      "https://rukminim2.flixcart.com/image/850/1000/xif0q/plant-seed/o/m/g/50-gcd-swcr-n-397-cezius-original-imagzvztat2vfxuc.jpeg?q=20&crop=false",
+      "https://3.imimg.com/data3/ST/GO/MY-4952601/yellow-maize-500x500.jpg",
+      "https://img2.exportersindia.com/product_images/bc-full/2023/4/11778784/fresh-yellow-maize-1681282067-6845686.jpeg",
     ],
     name: "Mecca",
     price: 16.99,
@@ -235,10 +237,10 @@ const products = [
     id: 13,
     img: "./image/card14.png",
     imgs: [
-      "../image/card2.png",
-      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
-      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
-      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+      "../image/card14.png",
+      "https://greengarden.ph/cdn/shop/products/LINE_ALBUM_PICTURE_230412_105.jpg?v=1681269051",
+      "https://www.100daysofrealfood.com/wp-content/uploads/2023/11/vecteezy_lettuce-salad-leaf-isolated-on-white-background-with_5582269-scaled.jpg",
+      "https://www.freshpoint.com/wp-content/uploads/commodity-iceberg.jpg",
     ],
     name: "Lettuce",
     price: 14.99,
@@ -249,10 +251,10 @@ const products = [
     id: 14,
     img: "./image/card15.png",
     imgs: [
-      "../image/card2.png",
-      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
-      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
-      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+      "../image/card15.png",
+      "https://farmersbox.co.nz/cdn/shop/products/GREENCHILLIES_a02d97e1-da3c-47b9-b3bd-182a16f0b947.jpg?v=1680562372",
+      "https://foodcare.in/cdn/shop/files/GreenChilli.png?v=1696672949&width=1946",
+      "https://m.media-amazon.com/images/I/41TPjqbVbQL._SR600%2C315_PIWhiteStrip%2CBottomLeft%2C0%2C35_SCLZZZZZZZ_FMpng_BG255%2C255%2C255.jpg",
     ],
     name: "Chili",
     price: 12.99,
@@ -263,10 +265,10 @@ const products = [
     id: 15,
     img: "./image/card16.png",
     imgs: [
-      "../image/card2.png",
-      "https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488",
-      "https://cdn.mafrservices.com/sys-master-root/h68/he6/10358905471006/442622_main.jpg?im=Resize=480",
-      "https://cdn.mafrservices.com/sys-master-root/he8/h2c/9882073497630/404426_main.jpg?im=Resize=480",
+      "../image/card16.png",
+      "https://www.themeatbox.co.nz/cdn/shop/files/TMBProductImages_22_1024x1024.png?v=1705350476",
+      "https://issyafrica.com/39-large_default/red-capsicum-pepper-800g.jpg",
+      "https://5.imimg.com/data5/JE/QV/JC/SELLER-107172905/red-capsicum-500x500.jpg",
     ],
     name: "Red Chili",
     price: 14.99,
@@ -293,12 +295,17 @@ products.forEach((item) => {
                   <h6>${item.price}</h6>
                   <img src="./image/Rating.svg" alt="" />
                 </div>
-                <div class="bag">
+                <div class="bag" onclick="counter()">
                   <ion-icon name="bag-add-outline"></ion-icon>
                 </div>
               </div>
             </div> `;
 });
+const counter = ()=>{
+  a++
+  document.querySelector(".cart-number").textContent = a
+}
+
 
 const showModal = (id) => {
   console.log(id);
