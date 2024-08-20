@@ -694,7 +694,6 @@ main {
 }
 .katta-rasm img {
   width: 400px;
-  height: 400px;
 }
 .products-title {
   width: 480px;
@@ -1533,16 +1532,18 @@ footer {
   }
 
   .card_products {
+    padding: 0px 0px 150px 20px;
     width: 95%;
-    height: 87%;
+    min-height: 67%;
     flex-direction: column;
   }
   .products-img img {
     width: 80px;
 }
   .katta-rasm img {
-    width: 230px;
-    height: 200px;
+    margin-top: 30px;
+    width: 250px;
+    height: 250px;
   }
 
   .products-title {
