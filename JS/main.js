@@ -1,5 +1,6 @@
 const cards = document.querySelector(".cards");
 const card_products = document.querySelector(".card_products");
+const popular_cards = document.querySelector(".popular_cards");
 const modal_login = document.querySelector(".modal_login");
 const ragistratsion = document.querySelector(".ragistratsion");
 const sign_in = document.querySelector(".sign-in");
@@ -11,19 +12,18 @@ const mobile_link = document.querySelector(".mobile_link");
 
 let a = 0;
 
-
 document.addEventListener("click", (e) => {
   if (e.target.classList.contains("img1")) {
-    document.querySelector(".katta-img").setAttribute("src", e.target.getAttribute("src"));
+    document
+      .querySelector(".katta-img")
+      .setAttribute("src", e.target.getAttribute("src"));
   }
-})
-
-
-menu.addEventListener("click", () => {
-     mobile_link.classList.toggle("active");
-     menu.classList.toggle("active");
 });
 
+menu.addEventListener("click", () => {
+  mobile_link.classList.toggle("active");
+  menu.classList.toggle("active");
+});
 
 // card img
 const card_modal = document.querySelector(".card-modal");
@@ -261,21 +261,77 @@ const products = [
     priseDel: 10.99,
     desc: "Chili peppers are believed to have originated in Central or South America and were first cultivated in Mexico. European explorers brought chili peppers back to the Old World in the late 16th century as part of the Columbian Exchange.",
   },
+];
+const popular_categories = [
   {
-    id: 15,
-    img: "./image/card16.png",
-    imgs: [
-      "../image/card16.png",
-      "https://www.themeatbox.co.nz/cdn/shop/files/TMBProductImages_22_1024x1024.png?v=1705350476",
-      "https://issyafrica.com/39-large_default/red-capsicum-pepper-800g.jpg",
-      "https://5.imimg.com/data5/JE/QV/JC/SELLER-107172905/red-capsicum-500x500.jpg",
-    ],
-    name: "Red Chili",
-    price: 14.99,
-    priseDel: 12.99,
-    desc: "Chili peppers, also spelled chile or chilli (from Classical Nahuatl chīlli), are varieties of the berry-fruit of plants from the genus Capsicum, which are members of the nightshade family Solanaceae, cultivated for their pungency.",
+    id: 0,
+    img: "./image/image 1.png",
+    name: "Fresh Fruit",
+  },
+  {
+    id: 1,
+    img: "./image/image 2.png",
+    name: "Fresh Vegetables",
+  },
+  {
+    id: 2,
+    img: "./image/image 3.png",
+    name: "Meat & Fish",
+  },
+  {
+    id: 3,
+    img: "./image/image 4.png",
+    name: "Snacks",
+  },
+  {
+    id: 4,
+    img: "./image/image 5.png",
+    name: "Beverages",
+  },
+  {
+    id: 5,
+    img: "./image/image 6.png",
+    name: "Beauty & Health",
+  },
+  {
+    id: 6,
+    img: "./image/image 7.png",
+    name: "Bread & Bakery",
+  },
+  {
+    id: 7,
+    img: "./image/image 8.png",
+    name: "Baking Needs",
+  },
+  {
+    id: 8,
+    img: "./image/image 9.png",
+    name: "Cooking",
+  },
+  {
+    id: 9,
+    img: "./image/image 10.png",
+    name: "Diabetic Food",
+  },
+  {
+    id: 10,
+    img: "./image/image 11.png",
+    name: "Dish Detergents",
+  },
+  {
+    id: 11,
+    img: "./image/image 12.png",
+    name: "Oil",
   },
 ];
+
+popular_categories.forEach((item) => {
+  popular_cards.innerHTML += `
+     <div class="popular_card">
+              <img src="${item.img}" alt="Bu yerda rasm bor." />
+              <h3>${item.name}</h3>
+            </div> `;
+});
 
 products.forEach((item) => {
   cards.innerHTML += `
@@ -301,11 +357,10 @@ products.forEach((item) => {
               </div>
             </div> `;
 });
-const counter = ()=>{
-  a++
-  document.querySelector(".cart-number").textContent = a
-}
-
+const counter = () => {
+  a++;
+  document.querySelector(".cart-number").textContent = a;
+};
 
 const showModal = (id) => {
   console.log(id);
@@ -408,11 +463,8 @@ const showModal = (id) => {
    </div>
 `;
 
-card_modal.classList.add("active");
+  card_modal.classList.add("active");
 };
-
-
-
 
 const exitModal = () => {
   card_modal.classList.remove("active");
